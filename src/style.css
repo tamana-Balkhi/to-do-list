@@ -6,26 +6,28 @@
 body {
   background-color: #f6f6f6;
 }
-.container .inputDiv{
+
+.container .inputDiv {
   background: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 8px #00000026;
 }
 
-.title { 
- display: flex;
- align-items: center;
- gap: 500px;
+.title {
+  display: flex;
+  align-items: center;
+  gap: 500px;
 }
 
 .title img {
-   width: 19px;
+  width: 19px;
   height: 19px;
   padding-right: 18px;
   transition: all 0.3s;
   cursor: pointer;
 }
+
 .container .inputDiv h3 {
   color: #545862;
   font-size: 20px;
@@ -33,9 +35,7 @@ body {
   padding: 1rem;
   line-height: 20px;
   text-overflow: ellipsis;
-  text-decoration: bold;
 }
-
 
 .container {
   width: 50%;
@@ -64,7 +64,7 @@ body {
 }
 
 #todo-input::placeholder {
-   font-style: italic;
+  font-style: italic;
   font-family: 'Lato', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
