@@ -13,5 +13,4 @@ import './style.css';
 document.body.appendChild(component());*/
 
 import creatTasks from './modules/layout.js';
-
 creatTasks();
