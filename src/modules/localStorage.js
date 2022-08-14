@@ -74,13 +74,10 @@ class Storage {
     if (todoL.length > 1) {
       todoL.filter((x) => {
         if (x.completed) {
-        }
-        else {
           newArr.push(x);
           localStorage.setItem('todoL', JSON.stringify(newArr));
         }
         return newArr;
-
       });
 
       Storage.resetId();
