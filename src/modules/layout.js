@@ -1,7 +1,7 @@
 import Storage from './localStorage.js';
 class Lists {
   static displayToDo() {
-    const todo = Storage.getToDo();
+    const todo = Storage.getLists();
 
     todo.forEach((todo) => {
       Lists.addLList(todo);
