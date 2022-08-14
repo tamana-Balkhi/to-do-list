@@ -1,5 +1,5 @@
 class Storage {
-  static getToDo() {
+  static getLists() {
     let todoL;
     if (localStorage.getItem('todoL') === null) {
       todoL = [];
@@ -10,7 +10,7 @@ class Storage {
   }
 
   static addTodo(todo) {
-    const todoL = Storage.getToDo();
+    const todoL = Storage.getLists();
 
     todoL.push(todo);
 
@@ -18,7 +18,7 @@ class Storage {
   }
 
   static remove(id) {
-    const todoL = Storage.getToDo();
+    const todoL = Storage.getLists();
     id = Number(id);
     todoL.forEach((todo, i) => {
       if (todo.id === id) {
@@ -30,7 +30,7 @@ class Storage {
   }
 
   static resetId() {
-    const todoL = Storage.getToDo();
+    const todoL = Storage.getLists();
     const arr = [];
 
     todoL.forEach((item) => {
@@ -41,7 +41,7 @@ class Storage {
   }
 
   static checkboxCompleted(id) {
-    const todoL = Storage.getToDo();
+    const todoL = Storage.getLists();
     id = Number(id.textContent);
 
     todoL.forEach((x) => {
@@ -55,7 +55,7 @@ class Storage {
   }
 
   static checkboxNotCompleted(id) {
-    const todoL = Storage.getToDo();
+    const todoL = Storage.getLists();
     id = Number(id.textContent);
 
     todoL.forEach((x) => {
@@ -69,7 +69,7 @@ class Storage {
   }
 
   static removeCompleted() {
-    const todoL = Storage.getToDo();
+    const todoL = Storage.getLists();
     const newArr = [];
     if (todoL.length > 1) {
       todoL.filter((x) => {
@@ -90,7 +90,7 @@ class Storage {
   }
 
   static delete(id) {
-    const todoL = Storage.getToDo();
+    const todoL = Storage.getLists();
     const arr = [];
 
     todoL.forEach((item) => {
@@ -103,7 +103,7 @@ class Storage {
 
   static editInput(id, e, tdHide, editPara) {
     if (e.children[0].classList.contains('kebabImg')) {
-      const todoL = Storage.getToDo();
+      const todoL = Storage.getLists();
       id = Number(id);
       todoL.forEach((todo) => {
         if (id === todo.id) {
