@@ -18,19 +18,14 @@ document.querySelector('form').addEventListener('submit', (e) => {
 
   const todo = new CreateList(toDoInput, id, completed);
 
-
   ToDOList.addLList(todo);
 
-
   Storage.addL(todo);
-
 
   ToDOList.clearField();
 });
 
-
 document.getElementById('cleartask').addEventListener('click', () => { });
-
 
 document.getElementById('to-do-container').addEventListener('click', (e) => {
 
@@ -48,7 +43,6 @@ document.getElementById('to-do-container').addEventListener('click', (e) => {
     e.target.parentElement.parentElement.children[2].children[0].classList.toggle(
       'strike-through',
     );
-
   }
 
   Storage.remove(
