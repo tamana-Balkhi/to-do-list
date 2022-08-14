@@ -1,4 +1,4 @@
-const arrLists = [
+/*const arrLists = [
   {
     id: 1,
     description: 'Complete daily Task',
@@ -25,4 +25,13 @@ const arrLists = [
 
 ];
 
-export default arrLists;
+export default arrLists;*/
+class CreateList {
+  constructor(description, id, completed) {
+    this.description = description;
+    this.id = id;
+    this.completed = completed;
+  }
+}
+
+export default CreateList;
