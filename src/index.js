@@ -11,7 +11,7 @@ document.getElementById('cleartask').addEventListener('click', () => {
 
 document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const todoL = Storage.getToDo();
+  const todoL = Storage.getLists();
   const toDoInput = document.getElementById('todo-input').value;
   const id = todoL.length + 1;
   const completed = false;
