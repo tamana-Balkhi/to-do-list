@@ -29,6 +29,11 @@ body {
   gap: 500px;
 }
 
+table td img {
+  width: 30px;
+  margin: auto;
+}
+
 .title img {
   width: 19px;
   height: 19px;
@@ -64,11 +69,6 @@ table td {
   text-decoration: line-through;
 }
 
-table td img {
-  width: 30px;
-  margin: auto;
-}
-
 form {
   display: flex;
 }
@@ -89,7 +89,7 @@ form {
 
 #todo-input {
   width: 100%;
- height: 40px;
+  height: 40px;
   border: solid #f6f6f6;
 }
 
@@ -112,7 +112,7 @@ form {
   border: solid #f6f6f6;
 }
 
-.id{
+.id {
   display: none;
 }
 
