@@ -1,29 +1,36 @@
-import arrLists from './arrlists.js';
+import Storage from './localStorage.js';
+class Lists {
+  static displayToDo() {
+    const todo = Storage.getToDo();
 
-const listItem = document.getElementById('todo-lists');
+    todo.forEach((todo) => {
+      Lists.addLList(todo);
+    });
+  }
 
-const creatTasks = () => {
-  arrLists.map((item) => {
-    const li = document.createElement('li');
-    const checkbox = document.createElement('input');
-    checkbox.classList.add('checkbox');
-    checkbox.type = 'checkbox';
+  static addLList(todo) {
+    const ulContainer = document.getElementById('tbody');
+    const edite = document.createElement('tr');
 
-    const paragraph = document.createElement('p');
-    paragraph.classList.add('paragraph');
+    edite.innerHTML = `
+    <td> <input class='check'  id='checkBox' type="checkbox" /><td>
+    <td><p class='paragragh'> ${todo.description}</p><td>
+    <td class='id'>${todo.id}</td>
+    <td><img class='kebabImg' src="https://img.icons8.com/ios-glyphs/30/000000/menu-2.png" alt="" /></td>
+    <td><a href="#" class='delete'>X</a><td>
+    `;
+    ulContainer.appendChild(edite);
+  }
 
-    const remove = document.createElement('button');
-    remove.classList.add('remove');
-    remove.innerHTML = '...';
-    paragraph.textContent = item.description;
+  static deleteTodo(el) {
+    if (el.classList.contains('delete')) {
+      el.parentElement.parentElement.remove();
+    }
+  }
 
-    li.appendChild(checkbox);
-    li.appendChild(paragraph);
-    li.appendChild(remove);
-    listItem.appendChild(li);
+  static clearField() {
+    document.getElementById('todo-input').value = '';
+  }
+}
 
-    return listItem;
-  });
-};
-
-export default creatTasks;
+export default Lists;
