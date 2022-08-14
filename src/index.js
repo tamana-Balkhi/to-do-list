@@ -20,7 +20,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
 
   ToDOList.addLList(todo);
 
-  Storage.addL(todo);
+  Storage.addTodo(todo);
 
   ToDOList.clearField();
 });
