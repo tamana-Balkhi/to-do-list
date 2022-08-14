@@ -1,4 +1,5 @@
 import Storage from './localStorage.js';
+
 class Lists {
   static displayToDo() {
     const todo = Storage.getLists();

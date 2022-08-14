@@ -28,7 +28,6 @@ document.querySelector('form').addEventListener('submit', (e) => {
 document.getElementById('cleartask').addEventListener('click', () => { });
 
 document.getElementById('to-do-container').addEventListener('click', (e) => {
-
   Storage.editInput(
     e.target.parentElement.parentElement.children[4].textContent,
     e.target.parentElement,
