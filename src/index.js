@@ -25,7 +25,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
   ToDOList.clearField();
 });
 
-//document.getElementById('cleartask').addEventListener('click', () => { });
+// document.getElementById('cleartask').addEventListener('click', () => { });
 
 document.getElementById('to-do-container').addEventListener('click', (e) => {
   Storage.editInput(
@@ -35,14 +35,14 @@ document.getElementById('to-do-container').addEventListener('click', (e) => {
     e.target.parentElement.parentElement.children[2].children[0],
   );
 
-  /*ToDOList.deleteTodo(e.target);
+  /* ToDOList.deleteTodo(e.target);
 
   if (e.target.classList.contains('check')) {
     Storage.checkboxCompleted(e.target.parentElement.parentElement.children[4]);
     e.target.parentElement.parentElement.children[2].children[0].classList.toggle(
       'strike-through',
     );
-  }*/
+  } */
   ToDOList.deleteTodo(e.target);
   if (e.target.classList.contains('check')) {
     Storage.checkboxCompleted(

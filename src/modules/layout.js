@@ -13,13 +13,13 @@ class Lists {
     const ulContainer = document.getElementById('tbody');
     const edite = document.createElement('tr');
 
-    /*edite.innerHTML = `
+    /* edite.innerHTML = `
     <td> <input class='check'  id='checkBox' type="checkbox" /><td>
     <td><p class='paragragh'> ${todo.description}</p><td>
     <td class='id'>${todo.id}</td>
     <td><img class='menu' src="https://img.icons8.com/ios-glyphs/30/000000/menu-2.png" alt="" /></td>
     <td><a href="#" class='delete'>X</a><td>
-    `;*/
+    `; */
 
     if (todo.completed) {
       edite.innerHTML = `
