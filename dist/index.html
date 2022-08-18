@@ -1,15 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>todo list</title>
-  <script defer="defer" src="index.bundle.js"></script>
-</head>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 
 <body>
+
+  <main>
+    <div class="container">
+      <div class="inputDiv">
+        <div class="title">
+          <h3>today's to do</h3>
+          <img src="https://img.icons8.com/ios-glyphs/30/000000/refresh--v1.png" alt="">
+        </div>
+        <form action="#">
+          <input id="todo-input" type="text" placeholder="Add to your list" required />
+          <button type="submit" id="addBtn">
+            <img class="returnImg" id="returnImg" src="https://img.icons8.com/ios-glyphs/30/000000/return--v1.png"
+              alt="returnimag" />
+          </button>
+        </form>
+      </div>
+
+      <div class="to-do-list" id="to-do-container">
+        <table>
+          <thead></thead>
+          <tbody class="tbody" id="tbody"></tbody>
+        </table>
+        <button type="button" id="cleartask" class="cleartask">
+          clear all completed
+        </button>
+      </div>
+    </div>
+  </main>
   <script src="../src/index.js"></script>
 </body>
 
