@@ -4,7 +4,7 @@ Awesome ToDo list, Add your Takes and remove them if you like
 
 ## Live Demo
 
-[Not avilable yet]()
+[live demo link](https://tamana-balkhi.github.io/to-do-list/dist/)
 
 ## Built With
 
